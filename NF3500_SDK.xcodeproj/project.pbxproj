@@ -1,0 +1,1008 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2643EF931F38FA61008A8F68 /* NF3500SdkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2643EF921F38FA61008A8F68 /* NF3500SdkError.swift */; };
+		2643EF951F38FAD3008A8F68 /* HelperMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2643EF941F38FAD3008A8F68 /* HelperMethods.swift */; };
+		266B26B31F2F775E00F92248 /* SubscriberPublishTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266B26B21F2F775E00F92248 /* SubscriberPublishTo.swift */; };
+		2674AC0C1F1D35AA00C4451C /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674AC0B1F1D35AA00C4451C /* Clock.swift */; };
+		2674AC0E1F1D35F600C4451C /* TimeFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674AC0D1F1D35F600C4451C /* TimeFormat.swift */; };
+		2674AC101F1D368400C4451C /* TimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674AC0F1F1D368400C4451C /* TimeZone.swift */; };
+		2674AC121F1D387000C4451C /* DaylightSavingsTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674AC111F1D387000C4451C /* DaylightSavingsTime.swift */; };
+		2674AC141F1D390B00C4451C /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674AC131F1D390B00C4451C /* DayOfWeek.swift */; };
+		2674AC161F1D39C000C4451C /* WeekOfMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674AC151F1D39C000C4451C /* WeekOfMonth.swift */; };
+		2674AC181F1E9E8B00C4451C /* MonthOfYear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674AC171F1E9E8B00C4451C /* MonthOfYear.swift */; };
+		2674AC1A1F1EB66300C4451C /* Weekly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674AC191F1EB66300C4451C /* Weekly.swift */; };
+		2674AC1C1F1EC3F300C4451C /* MonthlyDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674AC1B1F1EC3F300C4451C /* MonthlyDate.swift */; };
+		2674AC1E1F1EE09800C4451C /* MonthlyDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674AC1D1F1EE09800C4451C /* MonthlyDay.swift */; };
+		2674AC201F1EE2B000C4451C /* YearlyDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674AC1F1F1EE2AF00C4451C /* YearlyDate.swift */; };
+		2674AC221F1EE41500C4451C /* RepeatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674AC211F1EE41500C4451C /* RepeatType.swift */; };
+		2674AC241F1EE7D500C4451C /* YearlyDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674AC231F1EE7D500C4451C /* YearlyDay.swift */; };
+		2674AC261F1EEAB100C4451C /* EveryNDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674AC251F1EEAB100C4451C /* EveryNDay.swift */; };
+		2674AC281F1EECB700C4451C /* HolidayType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674AC271F1EECB700C4451C /* HolidayType.swift */; };
+		2674AC2A1F1EF07400C4451C /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674AC291F1EF07400C4451C /* Holiday.swift */; };
+		267E06731F1A9596004B6542 /* InputDigitalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267E06721F1A9596004B6542 /* InputDigitalState.swift */; };
+		267E06751F1AF88C004B6542 /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267E06741F1AF88C004B6542 /* Period.swift */; };
+		267E06771F1D04DA004B6542 /* SpecialDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267E06761F1D04DA004B6542 /* SpecialDay.swift */; };
+		267E067A1F1D07E1004B6542 /* Cbus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267E06791F1D07E1004B6542 /* Cbus.swift */; };
+		267E067C1F1D189D004B6542 /* CbusSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267E067B1F1D189D004B6542 /* CbusSource.swift */; };
+		267E067E1F1D1C24004B6542 /* CbusLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267E067D1F1D1C24004B6542 /* CbusLevel.swift */; };
+		267E06811F1D20A6004B6542 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267E06801F1D20A6004B6542 /* Controller.swift */; };
+		267E06831F1D293A004B6542 /* Communications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267E06821F1D293A004B6542 /* Communications.swift */; };
+		267E06851F1D2AD5004B6542 /* BaudRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267E06841F1D2AD5004B6542 /* BaudRate.swift */; };
+		267E06871F1D2BF1004B6542 /* Parity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267E06861F1D2BF1004B6542 /* Parity.swift */; };
+		267E06891F1D2C6F004B6542 /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267E06881F1D2C6F004B6542 /* Mode.swift */; };
+		268B5E3C1F0FD55E0084A0B7 /* NF3500_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268B5E321F0FD55E0084A0B7 /* NF3500_SDK.framework */; };
+		268B5E411F0FD55E0084A0B7 /* NF3500_SDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B5E401F0FD55E0084A0B7 /* NF3500_SDKTests.swift */; };
+		268B5E431F0FD55E0084A0B7 /* NF3500_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 268B5E351F0FD55E0084A0B7 /* NF3500_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		268B5E521F0FD6080084A0B7 /* LogicType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B5E4E1F0FD6080084A0B7 /* LogicType.swift */; };
+		268B5E531F0FD6080084A0B7 /* PriorityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B5E4F1F0FD6080084A0B7 /* PriorityType.swift */; };
+		268B5E541F0FD6080084A0B7 /* SourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B5E501F0FD6080084A0B7 /* SourceType.swift */; };
+		268B5E5B1F0FD6610084A0B7 /* Zone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B5E571F0FD6610084A0B7 /* Zone.swift */; };
+		268B5E5C1F0FD6610084A0B7 /* ZoneOverride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B5E581F0FD6610084A0B7 /* ZoneOverride.swift */; };
+		268B5E5E1F0FD6610084A0B7 /* ZoneSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B5E5A1F0FD6610084A0B7 /* ZoneSource.swift */; };
+		268B5E601F0FD7090084A0B7 /* ZoneOverrideState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B5E5F1F0FD7090084A0B7 /* ZoneOverrideState.swift */; };
+		268B5E621F0FD9D00084A0B7 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B5E611F0FD9D00084A0B7 /* Source.swift */; };
+		268B5E651F0FFE0D0084A0B7 /* Comms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B5E641F0FFE0D0084A0B7 /* Comms.swift */; };
+		268B5E6B1F13B3FC0084A0B7 /* SwitchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B5E6A1F13B3FC0084A0B7 /* SwitchType.swift */; };
+		268B5E6D1F13B5940084A0B7 /* SensorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B5E6C1F13B5940084A0B7 /* SensorType.swift */; };
+		268B5E6F1F13B8B10084A0B7 /* TerminalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B5E6E1F13B8B10084A0B7 /* TerminalType.swift */; };
+		268B5E721F13B9A00084A0B7 /* Terminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B5E711F13B9A00084A0B7 /* Terminal.swift */; };
+		268B5E741F13BAE30084A0B7 /* TerminalSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B5E731F13BAE30084A0B7 /* TerminalSource.swift */; };
+		268B5E7B1F13C4020084A0B7 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B5E7A1F13C4020084A0B7 /* Input.swift */; };
+		268B5E7D1F13C7AB0084A0B7 /* InputTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B5E7C1F13C7AB0084A0B7 /* InputTimer.swift */; };
+		268B5E7F1F13C8650084A0B7 /* TimerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B5E7E1F13C8650084A0B7 /* TimerType.swift */; };
+		268B5E811F13C9F60084A0B7 /* InputSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B5E801F13C9F60084A0B7 /* InputSource.swift */; };
+		268B5E831F13CB900084A0B7 /* Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B5E821F13CB900084A0B7 /* Sync.swift */; };
+		268B5E851F13CCCE0084A0B7 /* SyncType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B5E841F13CCCE0084A0B7 /* SyncType.swift */; };
+		268B5E891F140DA30084A0B7 /* SourceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B5E881F140DA30084A0B7 /* SourceState.swift */; };
+		268B5E8F1F14410A0084A0B7 /* NF3500SDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B5E8E1F14410A0084A0B7 /* NF3500SDK.swift */; };
+		268C55221F29086D009BEA03 /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55211F29086D009BEA03 /* Publisher.swift */; };
+		268C55241F290AD4009BEA03 /* PublisherPublishTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55231F290AD4009BEA03 /* PublisherPublishTo.swift */; };
+		268C55271F29146B009BEA03 /* BreakerMembers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55261F29146B009BEA03 /* BreakerMembers.swift */; };
+		268C55291F2914D5009BEA03 /* BMPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55281F2914D5009BEA03 /* BMPanel.swift */; };
+		268C552D1F2F70BB009BEA03 /* SubscribeTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C552C1F2F70BB009BEA03 /* SubscribeTo.swift */; };
+		268CF30C1F467D9E00BC4D36 /* NF3500_SDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 268CF30B1F467D9E00BC4D36 /* NF3500_SDK.podspec */; };
+		26E2CC2F1F1F9395000C56F4 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E2CC2E1F1F9395000C56F4 /* Schedule.swift */; };
+		26E2CC321F1F9B93000C56F4 /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E2CC311F1F9B93000C56F4 /* Bus.swift */; };
+		26E2CC341F1F9C0F000C56F4 /* BusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E2CC331F1F9C0F000C56F4 /* BusModel.swift */; };
+		26E2CC381F1FA743000C56F4 /* Breaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E2CC371F1FA743000C56F4 /* Breaker.swift */; };
+		26E2CC3A1F1FA7FE000C56F4 /* BlinkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E2CC391F1FA7FE000C56F4 /* BlinkType.swift */; };
+		26E2CC3C1F1FCCDD000C56F4 /* Panel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E2CC3B1F1FCCDD000C56F4 /* Panel.swift */; };
+		26E2CC3E1F21321C000C56F4 /* SpecialDayPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E2CC3D1F21321C000C56F4 /* SpecialDayPriority.swift */; };
+		26E2CC401F2135D5000C56F4 /* LevelSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E2CC3F1F2135D5000C56F4 /* LevelSource.swift */; };
+		26E2CC421F213727000C56F4 /* RampRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E2CC411F213727000C56F4 /* RampRate.swift */; };
+		26E2CC441F213B8F000C56F4 /* CbusSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E2CC431F213B8F000C56F4 /* CbusSourceType.swift */; };
+		26E2CC491F22654B000C56F4 /* Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E2CC481F22654B000C56F4 /* Subscriber.swift */; };
+		26FDD7301F265A010004A44F /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FDD72F1F265A010004A44F /* Component.swift */; };
+		26FDD7321F265A7F0004A44F /* ComponentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FDD7311F265A7F0004A44F /* ComponentType.swift */; };
+		26FDD7341F265FD00004A44F /* PowerSupply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FDD7331F265FD00004A44F /* PowerSupply.swift */; };
+		26FDD7361F2663350004A44F /* ControllerComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FDD7351F2663350004A44F /* ControllerComponent.swift */; };
+		26FDD7381F2664580004A44F /* OnePoleBreaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FDD7371F2664580004A44F /* OnePoleBreaker.swift */; };
+		26FDD73A1F2668E80004A44F /* TwoPoleBreakerLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FDD7391F2668E80004A44F /* TwoPoleBreakerLeft.swift */; };
+		26FDD73C1F266A330004A44F /* TwoPoleBreakerRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FDD73B1F266A330004A44F /* TwoPoleBreakerRight.swift */; };
+		26FDD73E1F266AB80004A44F /* ThreePoleBreaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FDD73D1F266AB80004A44F /* ThreePoleBreaker.swift */; };
+		26FDD7401F266B050004A44F /* EmptySlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FDD73F1F266B050004A44F /* EmptySlot.swift */; };
+		26FDD7421F2671A60004A44F /* ElBreakerLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FDD7411F2671A60004A44F /* ElBreakerLeft.swift */; };
+		26FDD7441F2673090004A44F /* ElBreakerRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FDD7431F2673090004A44F /* ElBreakerRight.swift */; };
+		5268160996999A1C9AA96D85 /* Pods_NF3500_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE3BDB29EE948576EEFD0546 /* Pods_NF3500_SDK.framework */; };
+		906C62A22242AF5F1423D808 /* Pods_NF3500_SDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79DE8C4B9865666E2B14ED5 /* Pods_NF3500_SDKTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		268B5E3D1F0FD55E0084A0B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 268B5E291F0FD55E0084A0B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 268B5E311F0FD55E0084A0B7;
+			remoteInfo = NF3500_SDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2643EF921F38FA61008A8F68 /* NF3500SdkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NF3500SdkError.swift; path = Enums/NF3500SdkError.swift; sourceTree = "<group>"; };
+		2643EF941F38FAD3008A8F68 /* HelperMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelperMethods.swift; path = Data/HelperMethods.swift; sourceTree = "<group>"; };
+		266B26B21F2F775E00F92248 /* SubscriberPublishTo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscriberPublishTo.swift; path = "Data/Remote Sources/Subscribers/SubscriberPublishTo.swift"; sourceTree = "<group>"; };
+		2674AC0B1F1D35AA00C4451C /* Clock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Clock.swift; path = Data/Controller/Clock.swift; sourceTree = "<group>"; };
+		2674AC0D1F1D35F600C4451C /* TimeFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeFormat.swift; path = Enums/TimeFormat.swift; sourceTree = "<group>"; };
+		2674AC0F1F1D368400C4451C /* TimeZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeZone.swift; path = Enums/TimeZone.swift; sourceTree = "<group>"; };
+		2674AC111F1D387000C4451C /* DaylightSavingsTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaylightSavingsTime.swift; path = Data/Controller/DaylightSavingsTime.swift; sourceTree = "<group>"; };
+		2674AC131F1D390B00C4451C /* DayOfWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DayOfWeek.swift; path = Enums/DayOfWeek.swift; sourceTree = "<group>"; };
+		2674AC151F1D39C000C4451C /* WeekOfMonth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeekOfMonth.swift; path = Enums/WeekOfMonth.swift; sourceTree = "<group>"; };
+		2674AC171F1E9E8B00C4451C /* MonthOfYear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MonthOfYear.swift; path = Enums/MonthOfYear.swift; sourceTree = "<group>"; };
+		2674AC191F1EB66300C4451C /* Weekly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Weekly.swift; path = Data/Schedules/SpecialDays/Weekly.swift; sourceTree = "<group>"; };
+		2674AC1B1F1EC3F300C4451C /* MonthlyDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MonthlyDate.swift; path = Data/Schedules/SpecialDays/MonthlyDate.swift; sourceTree = "<group>"; };
+		2674AC1D1F1EE09800C4451C /* MonthlyDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MonthlyDay.swift; path = Data/Schedules/SpecialDays/MonthlyDay.swift; sourceTree = "<group>"; };
+		2674AC1F1F1EE2AF00C4451C /* YearlyDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YearlyDate.swift; path = Data/Schedules/SpecialDays/YearlyDate.swift; sourceTree = "<group>"; };
+		2674AC211F1EE41500C4451C /* RepeatType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RepeatType.swift; path = Data/Schedules/SpecialDays/RepeatType.swift; sourceTree = "<group>"; };
+		2674AC231F1EE7D500C4451C /* YearlyDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YearlyDay.swift; path = Data/Schedules/SpecialDays/YearlyDay.swift; sourceTree = "<group>"; };
+		2674AC251F1EEAB100C4451C /* EveryNDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EveryNDay.swift; path = Data/Schedules/SpecialDays/EveryNDay.swift; sourceTree = "<group>"; };
+		2674AC271F1EECB700C4451C /* HolidayType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HolidayType.swift; path = Enums/HolidayType.swift; sourceTree = "<group>"; };
+		2674AC291F1EF07400C4451C /* Holiday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Holiday.swift; path = Data/Schedules/SpecialDays/Holiday.swift; sourceTree = "<group>"; };
+		267E06721F1A9596004B6542 /* InputDigitalState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InputDigitalState.swift; path = Enums/InputDigitalState.swift; sourceTree = "<group>"; };
+		267E06741F1AF88C004B6542 /* Period.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Period.swift; path = Data/Schedules/Periods/Period.swift; sourceTree = "<group>"; };
+		267E06761F1D04DA004B6542 /* SpecialDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpecialDay.swift; path = Data/Schedules/SpecialDays/SpecialDay.swift; sourceTree = "<group>"; };
+		267E06791F1D07E1004B6542 /* Cbus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cbus.swift; path = Data/Cbus/Cbus.swift; sourceTree = "<group>"; };
+		267E067B1F1D189D004B6542 /* CbusSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CbusSource.swift; path = Data/Cbus/CbusSource.swift; sourceTree = "<group>"; };
+		267E067D1F1D1C24004B6542 /* CbusLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CbusLevel.swift; path = Data/Cbus/CbusLevel.swift; sourceTree = "<group>"; };
+		267E06801F1D20A6004B6542 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Controller.swift; path = Data/Controller/Controller.swift; sourceTree = "<group>"; };
+		267E06821F1D293A004B6542 /* Communications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Communications.swift; path = Data/Controller/Communications.swift; sourceTree = "<group>"; };
+		267E06841F1D2AD5004B6542 /* BaudRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaudRate.swift; path = Enums/BaudRate.swift; sourceTree = "<group>"; };
+		267E06861F1D2BF1004B6542 /* Parity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Parity.swift; path = Enums/Parity.swift; sourceTree = "<group>"; };
+		267E06881F1D2C6F004B6542 /* Mode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mode.swift; path = Enums/Mode.swift; sourceTree = "<group>"; };
+		268B5E321F0FD55E0084A0B7 /* NF3500_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NF3500_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		268B5E351F0FD55E0084A0B7 /* NF3500_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NF3500_SDK.h; sourceTree = "<group>"; };
+		268B5E361F0FD55E0084A0B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		268B5E3B1F0FD55E0084A0B7 /* NF3500_SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NF3500_SDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		268B5E401F0FD55E0084A0B7 /* NF3500_SDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NF3500_SDKTests.swift; sourceTree = "<group>"; usesTabs = 0; };
+		268B5E421F0FD55E0084A0B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		268B5E4E1F0FD6080084A0B7 /* LogicType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogicType.swift; path = Enums/LogicType.swift; sourceTree = "<group>"; };
+		268B5E4F1F0FD6080084A0B7 /* PriorityType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PriorityType.swift; path = Enums/PriorityType.swift; sourceTree = "<group>"; };
+		268B5E501F0FD6080084A0B7 /* SourceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SourceType.swift; path = Enums/SourceType.swift; sourceTree = "<group>"; };
+		268B5E571F0FD6610084A0B7 /* Zone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Zone.swift; path = Data/Zones/Zone.swift; sourceTree = "<group>"; };
+		268B5E581F0FD6610084A0B7 /* ZoneOverride.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZoneOverride.swift; path = Data/Zones/ZoneOverride.swift; sourceTree = "<group>"; };
+		268B5E5A1F0FD6610084A0B7 /* ZoneSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZoneSource.swift; path = Data/Zones/ZoneSource.swift; sourceTree = "<group>"; };
+		268B5E5F1F0FD7090084A0B7 /* ZoneOverrideState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZoneOverrideState.swift; path = Enums/ZoneOverrideState.swift; sourceTree = "<group>"; };
+		268B5E611F0FD9D00084A0B7 /* Source.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Source.swift; path = Data/Source.swift; sourceTree = "<group>"; };
+		268B5E641F0FFE0D0084A0B7 /* Comms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comms.swift; path = Comms/Comms.swift; sourceTree = "<group>"; };
+		268B5E6A1F13B3FC0084A0B7 /* SwitchType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwitchType.swift; path = Enums/SwitchType.swift; sourceTree = "<group>"; };
+		268B5E6C1F13B5940084A0B7 /* SensorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SensorType.swift; path = Enums/SensorType.swift; sourceTree = "<group>"; };
+		268B5E6E1F13B8B10084A0B7 /* TerminalType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TerminalType.swift; path = Enums/TerminalType.swift; sourceTree = "<group>"; };
+		268B5E711F13B9A00084A0B7 /* Terminal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Terminal.swift; path = Data/Terminals/Terminal.swift; sourceTree = "<group>"; };
+		268B5E731F13BAE30084A0B7 /* TerminalSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TerminalSource.swift; path = Data/Terminals/TerminalSource.swift; sourceTree = "<group>"; };
+		268B5E7A1F13C4020084A0B7 /* Input.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Input.swift; path = Data/Inputs/Input.swift; sourceTree = "<group>"; };
+		268B5E7C1F13C7AB0084A0B7 /* InputTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InputTimer.swift; path = Data/Inputs/InputTimer.swift; sourceTree = "<group>"; };
+		268B5E7E1F13C8650084A0B7 /* TimerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimerType.swift; path = Enums/TimerType.swift; sourceTree = "<group>"; };
+		268B5E801F13C9F60084A0B7 /* InputSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InputSource.swift; path = Data/Inputs/InputSource.swift; sourceTree = "<group>"; };
+		268B5E821F13CB900084A0B7 /* Sync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sync.swift; path = Data/Inputs/Sync.swift; sourceTree = "<group>"; };
+		268B5E841F13CCCE0084A0B7 /* SyncType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SyncType.swift; path = Enums/SyncType.swift; sourceTree = "<group>"; };
+		268B5E881F140DA30084A0B7 /* SourceState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SourceState.swift; path = Data/SourceState.swift; sourceTree = "<group>"; };
+		268B5E8E1F14410A0084A0B7 /* NF3500SDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NF3500SDK.swift; path = API/NF3500SDK.swift; sourceTree = "<group>"; };
+		268C55211F29086D009BEA03 /* Publisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Publisher.swift; path = "Data/Remote Sources/Publishers/Publisher.swift"; sourceTree = "<group>"; };
+		268C55231F290AD4009BEA03 /* PublisherPublishTo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PublisherPublishTo.swift; path = "Data/Remote Sources/Publishers/PublisherPublishTo.swift"; sourceTree = "<group>"; };
+		268C55261F29146B009BEA03 /* BreakerMembers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BreakerMembers.swift; path = Data/Zones/BreakerMembers/BreakerMembers.swift; sourceTree = "<group>"; };
+		268C55281F2914D5009BEA03 /* BMPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BMPanel.swift; path = Data/Zones/BreakerMembers/BMPanel.swift; sourceTree = "<group>"; };
+		268C552C1F2F70BB009BEA03 /* SubscribeTo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscribeTo.swift; path = "Data/Remote Sources/Subscribers/SubscribeTo.swift"; sourceTree = "<group>"; };
+		268CF30B1F467D9E00BC4D36 /* NF3500_SDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NF3500_SDK.podspec; sourceTree = "<group>"; };
+		26E2CC2E1F1F9395000C56F4 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Schedule.swift; path = Data/Schedules/Schedule.swift; sourceTree = "<group>"; };
+		26E2CC311F1F9B93000C56F4 /* Bus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bus.swift; path = Data/Panels/Bus.swift; sourceTree = "<group>"; };
+		26E2CC331F1F9C0F000C56F4 /* BusModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BusModel.swift; path = Enums/BusModel.swift; sourceTree = "<group>"; };
+		26E2CC371F1FA743000C56F4 /* Breaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Breaker.swift; path = Data/Panels/Breaker.swift; sourceTree = "<group>"; };
+		26E2CC391F1FA7FE000C56F4 /* BlinkType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlinkType.swift; path = Enums/BlinkType.swift; sourceTree = "<group>"; };
+		26E2CC3B1F1FCCDD000C56F4 /* Panel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Panel.swift; path = Data/Panels/Panel.swift; sourceTree = "<group>"; };
+		26E2CC3D1F21321C000C56F4 /* SpecialDayPriority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpecialDayPriority.swift; path = Enums/SpecialDayPriority.swift; sourceTree = "<group>"; };
+		26E2CC3F1F2135D5000C56F4 /* LevelSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelSource.swift; path = Enums/LevelSource.swift; sourceTree = "<group>"; };
+		26E2CC411F213727000C56F4 /* RampRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RampRate.swift; path = Enums/RampRate.swift; sourceTree = "<group>"; };
+		26E2CC431F213B8F000C56F4 /* CbusSourceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CbusSourceType.swift; path = Enums/CbusSourceType.swift; sourceTree = "<group>"; };
+		26E2CC481F22654B000C56F4 /* Subscriber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Subscriber.swift; path = "Data/Remote Sources/Subscribers/Subscriber.swift"; sourceTree = "<group>"; };
+		26FDD72F1F265A010004A44F /* Component.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Component.swift; path = Data/Panels/Components/Component.swift; sourceTree = "<group>"; };
+		26FDD7311F265A7F0004A44F /* ComponentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ComponentType.swift; path = Enums/ComponentType.swift; sourceTree = "<group>"; };
+		26FDD7331F265FD00004A44F /* PowerSupply.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PowerSupply.swift; path = Data/Panels/Components/PowerSupply.swift; sourceTree = "<group>"; };
+		26FDD7351F2663350004A44F /* ControllerComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControllerComponent.swift; path = Data/Panels/Components/ControllerComponent.swift; sourceTree = "<group>"; };
+		26FDD7371F2664580004A44F /* OnePoleBreaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnePoleBreaker.swift; path = Data/Panels/Components/OnePoleBreaker.swift; sourceTree = "<group>"; };
+		26FDD7391F2668E80004A44F /* TwoPoleBreakerLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwoPoleBreakerLeft.swift; path = Data/Panels/Components/TwoPoleBreakerLeft.swift; sourceTree = "<group>"; };
+		26FDD73B1F266A330004A44F /* TwoPoleBreakerRight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwoPoleBreakerRight.swift; path = Data/Panels/Components/TwoPoleBreakerRight.swift; sourceTree = "<group>"; };
+		26FDD73D1F266AB80004A44F /* ThreePoleBreaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThreePoleBreaker.swift; path = Data/Panels/Components/ThreePoleBreaker.swift; sourceTree = "<group>"; };
+		26FDD73F1F266B050004A44F /* EmptySlot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmptySlot.swift; path = Data/Panels/Components/EmptySlot.swift; sourceTree = "<group>"; };
+		26FDD7411F2671A60004A44F /* ElBreakerLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ElBreakerLeft.swift; path = Data/Panels/Components/ElBreakerLeft.swift; sourceTree = "<group>"; };
+		26FDD7431F2673090004A44F /* ElBreakerRight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ElBreakerRight.swift; path = Data/Panels/Components/ElBreakerRight.swift; sourceTree = "<group>"; };
+		669F9E151F348A145177E952 /* Pods-NF3500_SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NF3500_SDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-NF3500_SDK/Pods-NF3500_SDK.release.xcconfig"; sourceTree = "<group>"; };
+		7FE950ADC8B05745ED745FE5 /* Pods-NF3500_SDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NF3500_SDKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NF3500_SDKTests/Pods-NF3500_SDKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A933C207EDE9266C26B9F506 /* Pods-NF3500_SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NF3500_SDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NF3500_SDK/Pods-NF3500_SDK.debug.xcconfig"; sourceTree = "<group>"; };
+		C79DE8C4B9865666E2B14ED5 /* Pods_NF3500_SDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NF3500_SDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1867F80D573C440E59C3CCF /* Pods-NF3500_SDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NF3500_SDKTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NF3500_SDKTests/Pods-NF3500_SDKTests.release.xcconfig"; sourceTree = "<group>"; };
+		FE3BDB29EE948576EEFD0546 /* Pods_NF3500_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NF3500_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		268B5E2E1F0FD55E0084A0B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5268160996999A1C9AA96D85 /* Pods_NF3500_SDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268B5E381F0FD55E0084A0B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268B5E3C1F0FD55E0084A0B7 /* NF3500_SDK.framework in Frameworks */,
+				906C62A22242AF5F1423D808 /* Pods_NF3500_SDKTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		267E06781F1D0755004B6542 /* Cbus */ = {
+			isa = PBXGroup;
+			children = (
+				267E06791F1D07E1004B6542 /* Cbus.swift */,
+				267E067B1F1D189D004B6542 /* CbusSource.swift */,
+				267E067D1F1D1C24004B6542 /* CbusLevel.swift */,
+			);
+			name = Cbus;
+			sourceTree = "<group>";
+		};
+		267E067F1F1D1FAB004B6542 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				267E06801F1D20A6004B6542 /* Controller.swift */,
+				267E06821F1D293A004B6542 /* Communications.swift */,
+				2674AC0B1F1D35AA00C4451C /* Clock.swift */,
+				2674AC111F1D387000C4451C /* DaylightSavingsTime.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		268B5E281F0FD55E0084A0B7 = {
+			isa = PBXGroup;
+			children = (
+				268CF30B1F467D9E00BC4D36 /* NF3500_SDK.podspec */,
+				268B5E341F0FD55E0084A0B7 /* NF3500_SDK */,
+				268B5E3F1F0FD55E0084A0B7 /* NF3500_SDKTests */,
+				268B5E331F0FD55E0084A0B7 /* Products */,
+				7EE3D05B6BE0F593411DD504 /* Pods */,
+				C44818E0CC28E91EB31E0B38 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		268B5E331F0FD55E0084A0B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				268B5E321F0FD55E0084A0B7 /* NF3500_SDK.framework */,
+				268B5E3B1F0FD55E0084A0B7 /* NF3500_SDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		268B5E341F0FD55E0084A0B7 /* NF3500_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				268B5E8D1F1440870084A0B7 /* API */,
+				268B5E631F0FFDDB0084A0B7 /* Comms */,
+				268B5E4D1F0FD57A0084A0B7 /* Data */,
+				268B5E4C1F0FD56E0084A0B7 /* Enums */,
+				268B5E351F0FD55E0084A0B7 /* NF3500_SDK.h */,
+				268B5E361F0FD55E0084A0B7 /* Info.plist */,
+			);
+			path = NF3500_SDK;
+			sourceTree = "<group>";
+		};
+		268B5E3F1F0FD55E0084A0B7 /* NF3500_SDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				268B5E401F0FD55E0084A0B7 /* NF3500_SDKTests.swift */,
+				268B5E421F0FD55E0084A0B7 /* Info.plist */,
+			);
+			path = NF3500_SDKTests;
+			sourceTree = "<group>";
+		};
+		268B5E4C1F0FD56E0084A0B7 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				2643EF921F38FA61008A8F68 /* NF3500SdkError.swift */,
+				268B5E6E1F13B8B10084A0B7 /* TerminalType.swift */,
+				268B5E5F1F0FD7090084A0B7 /* ZoneOverrideState.swift */,
+				268B5E4E1F0FD6080084A0B7 /* LogicType.swift */,
+				268B5E4F1F0FD6080084A0B7 /* PriorityType.swift */,
+				268B5E501F0FD6080084A0B7 /* SourceType.swift */,
+				268B5E6A1F13B3FC0084A0B7 /* SwitchType.swift */,
+				268B5E6C1F13B5940084A0B7 /* SensorType.swift */,
+				268B5E7E1F13C8650084A0B7 /* TimerType.swift */,
+				268B5E841F13CCCE0084A0B7 /* SyncType.swift */,
+				267E06721F1A9596004B6542 /* InputDigitalState.swift */,
+				267E06841F1D2AD5004B6542 /* BaudRate.swift */,
+				267E06861F1D2BF1004B6542 /* Parity.swift */,
+				267E06881F1D2C6F004B6542 /* Mode.swift */,
+				2674AC0D1F1D35F600C4451C /* TimeFormat.swift */,
+				2674AC0F1F1D368400C4451C /* TimeZone.swift */,
+				2674AC131F1D390B00C4451C /* DayOfWeek.swift */,
+				2674AC151F1D39C000C4451C /* WeekOfMonth.swift */,
+				2674AC171F1E9E8B00C4451C /* MonthOfYear.swift */,
+				2674AC271F1EECB700C4451C /* HolidayType.swift */,
+				26E2CC331F1F9C0F000C56F4 /* BusModel.swift */,
+				26E2CC391F1FA7FE000C56F4 /* BlinkType.swift */,
+				26E2CC3D1F21321C000C56F4 /* SpecialDayPriority.swift */,
+				26E2CC3F1F2135D5000C56F4 /* LevelSource.swift */,
+				26E2CC411F213727000C56F4 /* RampRate.swift */,
+				26E2CC431F213B8F000C56F4 /* CbusSourceType.swift */,
+				26FDD7311F265A7F0004A44F /* ComponentType.swift */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
+		268B5E4D1F0FD57A0084A0B7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				26E2CC301F1F9A2A000C56F4 /* Panels */,
+				26E2CC451F2246FE000C56F4 /* Remote Sourses */,
+				267E067F1F1D1FAB004B6542 /* Controller */,
+				268B5E561F0FD6290084A0B7 /* Zones */,
+				268B5E751F13BDA50084A0B7 /* Inputs */,
+				268B5E701F13B8C60084A0B7 /* Terminals */,
+				268B5E8A1F140E6A0084A0B7 /* Schedules */,
+				267E06781F1D0755004B6542 /* Cbus */,
+				268B5E611F0FD9D00084A0B7 /* Source.swift */,
+				268B5E881F140DA30084A0B7 /* SourceState.swift */,
+				2643EF941F38FAD3008A8F68 /* HelperMethods.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		268B5E561F0FD6290084A0B7 /* Zones */ = {
+			isa = PBXGroup;
+			children = (
+				268C55251F29142A009BEA03 /* BreakerMembers */,
+				268B5E571F0FD6610084A0B7 /* Zone.swift */,
+				268B5E581F0FD6610084A0B7 /* ZoneOverride.swift */,
+				268B5E5A1F0FD6610084A0B7 /* ZoneSource.swift */,
+			);
+			name = Zones;
+			sourceTree = "<group>";
+		};
+		268B5E631F0FFDDB0084A0B7 /* Comms */ = {
+			isa = PBXGroup;
+			children = (
+				268B5E641F0FFE0D0084A0B7 /* Comms.swift */,
+			);
+			name = Comms;
+			sourceTree = "<group>";
+		};
+		268B5E701F13B8C60084A0B7 /* Terminals */ = {
+			isa = PBXGroup;
+			children = (
+				268B5E711F13B9A00084A0B7 /* Terminal.swift */,
+				268B5E731F13BAE30084A0B7 /* TerminalSource.swift */,
+			);
+			name = Terminals;
+			sourceTree = "<group>";
+		};
+		268B5E751F13BDA50084A0B7 /* Inputs */ = {
+			isa = PBXGroup;
+			children = (
+				268B5E7A1F13C4020084A0B7 /* Input.swift */,
+				268B5E7C1F13C7AB0084A0B7 /* InputTimer.swift */,
+				268B5E801F13C9F60084A0B7 /* InputSource.swift */,
+				268B5E821F13CB900084A0B7 /* Sync.swift */,
+			);
+			name = Inputs;
+			sourceTree = "<group>";
+		};
+		268B5E8A1F140E6A0084A0B7 /* Schedules */ = {
+			isa = PBXGroup;
+			children = (
+				268B5E8C1F1411090084A0B7 /* SpecialDays */,
+				268B5E8B1F1411000084A0B7 /* Periods */,
+				26E2CC2E1F1F9395000C56F4 /* Schedule.swift */,
+			);
+			name = Schedules;
+			sourceTree = "<group>";
+		};
+		268B5E8B1F1411000084A0B7 /* Periods */ = {
+			isa = PBXGroup;
+			children = (
+				267E06741F1AF88C004B6542 /* Period.swift */,
+			);
+			name = Periods;
+			sourceTree = "<group>";
+		};
+		268B5E8C1F1411090084A0B7 /* SpecialDays */ = {
+			isa = PBXGroup;
+			children = (
+				267E06761F1D04DA004B6542 /* SpecialDay.swift */,
+				2674AC191F1EB66300C4451C /* Weekly.swift */,
+				2674AC1B1F1EC3F300C4451C /* MonthlyDate.swift */,
+				2674AC1D1F1EE09800C4451C /* MonthlyDay.swift */,
+				2674AC1F1F1EE2AF00C4451C /* YearlyDate.swift */,
+				2674AC231F1EE7D500C4451C /* YearlyDay.swift */,
+				2674AC251F1EEAB100C4451C /* EveryNDay.swift */,
+				2674AC211F1EE41500C4451C /* RepeatType.swift */,
+				2674AC291F1EF07400C4451C /* Holiday.swift */,
+			);
+			name = SpecialDays;
+			sourceTree = "<group>";
+		};
+		268B5E8D1F1440870084A0B7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				268B5E8E1F14410A0084A0B7 /* NF3500SDK.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		268C55251F29142A009BEA03 /* BreakerMembers */ = {
+			isa = PBXGroup;
+			children = (
+				268C55261F29146B009BEA03 /* BreakerMembers.swift */,
+				268C55281F2914D5009BEA03 /* BMPanel.swift */,
+			);
+			name = BreakerMembers;
+			sourceTree = "<group>";
+		};
+		26E2CC301F1F9A2A000C56F4 /* Panels */ = {
+			isa = PBXGroup;
+			children = (
+				26FDD72E1F2659C00004A44F /* Components */,
+				26E2CC311F1F9B93000C56F4 /* Bus.swift */,
+				26E2CC371F1FA743000C56F4 /* Breaker.swift */,
+				26E2CC3B1F1FCCDD000C56F4 /* Panel.swift */,
+			);
+			name = Panels;
+			sourceTree = "<group>";
+		};
+		26E2CC451F2246FE000C56F4 /* Remote Sourses */ = {
+			isa = PBXGroup;
+			children = (
+				26E2CC471F224889000C56F4 /* Publishers */,
+				26E2CC461F22487F000C56F4 /* Subscribers */,
+			);
+			name = "Remote Sourses";
+			sourceTree = "<group>";
+		};
+		26E2CC461F22487F000C56F4 /* Subscribers */ = {
+			isa = PBXGroup;
+			children = (
+				26E2CC481F22654B000C56F4 /* Subscriber.swift */,
+				268C552C1F2F70BB009BEA03 /* SubscribeTo.swift */,
+				266B26B21F2F775E00F92248 /* SubscriberPublishTo.swift */,
+			);
+			name = Subscribers;
+			sourceTree = "<group>";
+		};
+		26E2CC471F224889000C56F4 /* Publishers */ = {
+			isa = PBXGroup;
+			children = (
+				268C55211F29086D009BEA03 /* Publisher.swift */,
+				268C55231F290AD4009BEA03 /* PublisherPublishTo.swift */,
+			);
+			name = Publishers;
+			sourceTree = "<group>";
+		};
+		26FDD72E1F2659C00004A44F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				26FDD72F1F265A010004A44F /* Component.swift */,
+				26FDD7331F265FD00004A44F /* PowerSupply.swift */,
+				26FDD7351F2663350004A44F /* ControllerComponent.swift */,
+				26FDD7371F2664580004A44F /* OnePoleBreaker.swift */,
+				26FDD7391F2668E80004A44F /* TwoPoleBreakerLeft.swift */,
+				26FDD73B1F266A330004A44F /* TwoPoleBreakerRight.swift */,
+				26FDD73D1F266AB80004A44F /* ThreePoleBreaker.swift */,
+				26FDD73F1F266B050004A44F /* EmptySlot.swift */,
+				26FDD7411F2671A60004A44F /* ElBreakerLeft.swift */,
+				26FDD7431F2673090004A44F /* ElBreakerRight.swift */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		7EE3D05B6BE0F593411DD504 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A933C207EDE9266C26B9F506 /* Pods-NF3500_SDK.debug.xcconfig */,
+				669F9E151F348A145177E952 /* Pods-NF3500_SDK.release.xcconfig */,
+				7FE950ADC8B05745ED745FE5 /* Pods-NF3500_SDKTests.debug.xcconfig */,
+				E1867F80D573C440E59C3CCF /* Pods-NF3500_SDKTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C44818E0CC28E91EB31E0B38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE3BDB29EE948576EEFD0546 /* Pods_NF3500_SDK.framework */,
+				C79DE8C4B9865666E2B14ED5 /* Pods_NF3500_SDKTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		268B5E2F1F0FD55E0084A0B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268B5E431F0FD55E0084A0B7 /* NF3500_SDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		268B5E311F0FD55E0084A0B7 /* NF3500_SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 268B5E461F0FD55E0084A0B7 /* Build configuration list for PBXNativeTarget "NF3500_SDK" */;
+			buildPhases = (
+				D17CF6514DB8CB8D21EE05F2 /* [CP] Check Pods Manifest.lock */,
+				268B5E2D1F0FD55E0084A0B7 /* Sources */,
+				268B5E2E1F0FD55E0084A0B7 /* Frameworks */,
+				268B5E2F1F0FD55E0084A0B7 /* Headers */,
+				268B5E301F0FD55E0084A0B7 /* Resources */,
+				952B8792F39D5862F880271F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NF3500_SDK;
+			productName = NF3500_SDK;
+			productReference = 268B5E321F0FD55E0084A0B7 /* NF3500_SDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		268B5E3A1F0FD55E0084A0B7 /* NF3500_SDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 268B5E491F0FD55E0084A0B7 /* Build configuration list for PBXNativeTarget "NF3500_SDKTests" */;
+			buildPhases = (
+				E6DF4B50FEBA584C4D394136 /* [CP] Check Pods Manifest.lock */,
+				268B5E371F0FD55E0084A0B7 /* Sources */,
+				268B5E381F0FD55E0084A0B7 /* Frameworks */,
+				268B5E391F0FD55E0084A0B7 /* Resources */,
+				E050239A46B3B3825225A9A1 /* [CP] Embed Pods Frameworks */,
+				21A890363AE77EFE771DE76B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				268B5E3E1F0FD55E0084A0B7 /* PBXTargetDependency */,
+			);
+			name = NF3500_SDKTests;
+			productName = NF3500_SDKTests;
+			productReference = 268B5E3B1F0FD55E0084A0B7 /* NF3500_SDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		268B5E291F0FD55E0084A0B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Michael Dorak";
+				TargetAttributes = {
+					268B5E311F0FD55E0084A0B7 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PY9CB789VR;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					268B5E3A1F0FD55E0084A0B7 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PY9CB789VR;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 268B5E2C1F0FD55E0084A0B7 /* Build configuration list for PBXProject "NF3500_SDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 268B5E281F0FD55E0084A0B7;
+			productRefGroup = 268B5E331F0FD55E0084A0B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				268B5E311F0FD55E0084A0B7 /* NF3500_SDK */,
+				268B5E3A1F0FD55E0084A0B7 /* NF3500_SDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		268B5E301F0FD55E0084A0B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268CF30C1F467D9E00BC4D36 /* NF3500_SDK.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268B5E391F0FD55E0084A0B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21A890363AE77EFE771DE76B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NF3500_SDKTests/Pods-NF3500_SDKTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		952B8792F39D5862F880271F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NF3500_SDK/Pods-NF3500_SDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D17CF6514DB8CB8D21EE05F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E050239A46B3B3825225A9A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NF3500_SDKTests/Pods-NF3500_SDKTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6DF4B50FEBA584C4D394136 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		268B5E2D1F0FD55E0084A0B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268B5E7F1F13C8650084A0B7 /* TimerType.swift in Sources */,
+				268C55221F29086D009BEA03 /* Publisher.swift in Sources */,
+				26FDD7301F265A010004A44F /* Component.swift in Sources */,
+				2674AC261F1EEAB100C4451C /* EveryNDay.swift in Sources */,
+				26FDD7321F265A7F0004A44F /* ComponentType.swift in Sources */,
+				2674AC1C1F1EC3F300C4451C /* MonthlyDate.swift in Sources */,
+				26FDD73C1F266A330004A44F /* TwoPoleBreakerRight.swift in Sources */,
+				26E2CC381F1FA743000C56F4 /* Breaker.swift in Sources */,
+				268B5E621F0FD9D00084A0B7 /* Source.swift in Sources */,
+				2674AC121F1D387000C4451C /* DaylightSavingsTime.swift in Sources */,
+				2674AC1E1F1EE09800C4451C /* MonthlyDay.swift in Sources */,
+				268B5E851F13CCCE0084A0B7 /* SyncType.swift in Sources */,
+				2643EF951F38FAD3008A8F68 /* HelperMethods.swift in Sources */,
+				268B5E5E1F0FD6610084A0B7 /* ZoneSource.swift in Sources */,
+				268B5E521F0FD6080084A0B7 /* LogicType.swift in Sources */,
+				267E06851F1D2AD5004B6542 /* BaudRate.swift in Sources */,
+				2674AC281F1EECB700C4451C /* HolidayType.swift in Sources */,
+				268B5E6B1F13B3FC0084A0B7 /* SwitchType.swift in Sources */,
+				26E2CC421F213727000C56F4 /* RampRate.swift in Sources */,
+				26FDD73A1F2668E80004A44F /* TwoPoleBreakerLeft.swift in Sources */,
+				268C55291F2914D5009BEA03 /* BMPanel.swift in Sources */,
+				267E06771F1D04DA004B6542 /* SpecialDay.swift in Sources */,
+				268B5E811F13C9F60084A0B7 /* InputSource.swift in Sources */,
+				2674AC101F1D368400C4451C /* TimeZone.swift in Sources */,
+				2643EF931F38FA61008A8F68 /* NF3500SdkError.swift in Sources */,
+				268B5E7D1F13C7AB0084A0B7 /* InputTimer.swift in Sources */,
+				267E067C1F1D189D004B6542 /* CbusSource.swift in Sources */,
+				267E06871F1D2BF1004B6542 /* Parity.swift in Sources */,
+				26FDD7401F266B050004A44F /* EmptySlot.swift in Sources */,
+				2674AC1A1F1EB66300C4451C /* Weekly.swift in Sources */,
+				268B5E5B1F0FD6610084A0B7 /* Zone.swift in Sources */,
+				26FDD73E1F266AB80004A44F /* ThreePoleBreaker.swift in Sources */,
+				268B5E531F0FD6080084A0B7 /* PriorityType.swift in Sources */,
+				267E06751F1AF88C004B6542 /* Period.swift in Sources */,
+				26E2CC321F1F9B93000C56F4 /* Bus.swift in Sources */,
+				2674AC0E1F1D35F600C4451C /* TimeFormat.swift in Sources */,
+				268B5E6F1F13B8B10084A0B7 /* TerminalType.swift in Sources */,
+				26FDD7441F2673090004A44F /* ElBreakerRight.swift in Sources */,
+				26E2CC401F2135D5000C56F4 /* LevelSource.swift in Sources */,
+				268B5E8F1F14410A0084A0B7 /* NF3500SDK.swift in Sources */,
+				26E2CC3E1F21321C000C56F4 /* SpecialDayPriority.swift in Sources */,
+				26E2CC3A1F1FA7FE000C56F4 /* BlinkType.swift in Sources */,
+				26FDD7421F2671A60004A44F /* ElBreakerLeft.swift in Sources */,
+				267E06831F1D293A004B6542 /* Communications.swift in Sources */,
+				268C55271F29146B009BEA03 /* BreakerMembers.swift in Sources */,
+				2674AC141F1D390B00C4451C /* DayOfWeek.swift in Sources */,
+				2674AC181F1E9E8B00C4451C /* MonthOfYear.swift in Sources */,
+				267E06811F1D20A6004B6542 /* Controller.swift in Sources */,
+				268B5E541F0FD6080084A0B7 /* SourceType.swift in Sources */,
+				268B5E651F0FFE0D0084A0B7 /* Comms.swift in Sources */,
+				267E067A1F1D07E1004B6542 /* Cbus.swift in Sources */,
+				2674AC241F1EE7D500C4451C /* YearlyDay.swift in Sources */,
+				268B5E5C1F0FD6610084A0B7 /* ZoneOverride.swift in Sources */,
+				2674AC0C1F1D35AA00C4451C /* Clock.swift in Sources */,
+				26E2CC2F1F1F9395000C56F4 /* Schedule.swift in Sources */,
+				268C55241F290AD4009BEA03 /* PublisherPublishTo.swift in Sources */,
+				26E2CC341F1F9C0F000C56F4 /* BusModel.swift in Sources */,
+				268B5E601F0FD7090084A0B7 /* ZoneOverrideState.swift in Sources */,
+				2674AC201F1EE2B000C4451C /* YearlyDate.swift in Sources */,
+				266B26B31F2F775E00F92248 /* SubscriberPublishTo.swift in Sources */,
+				267E067E1F1D1C24004B6542 /* CbusLevel.swift in Sources */,
+				26E2CC441F213B8F000C56F4 /* CbusSourceType.swift in Sources */,
+				2674AC221F1EE41500C4451C /* RepeatType.swift in Sources */,
+				267E06731F1A9596004B6542 /* InputDigitalState.swift in Sources */,
+				268B5E891F140DA30084A0B7 /* SourceState.swift in Sources */,
+				26FDD7341F265FD00004A44F /* PowerSupply.swift in Sources */,
+				268B5E6D1F13B5940084A0B7 /* SensorType.swift in Sources */,
+				26E2CC491F22654B000C56F4 /* Subscriber.swift in Sources */,
+				26FDD7361F2663350004A44F /* ControllerComponent.swift in Sources */,
+				268B5E7B1F13C4020084A0B7 /* Input.swift in Sources */,
+				26FDD7381F2664580004A44F /* OnePoleBreaker.swift in Sources */,
+				2674AC161F1D39C000C4451C /* WeekOfMonth.swift in Sources */,
+				267E06891F1D2C6F004B6542 /* Mode.swift in Sources */,
+				2674AC2A1F1EF07400C4451C /* Holiday.swift in Sources */,
+				268B5E721F13B9A00084A0B7 /* Terminal.swift in Sources */,
+				268B5E831F13CB900084A0B7 /* Sync.swift in Sources */,
+				268B5E741F13BAE30084A0B7 /* TerminalSource.swift in Sources */,
+				268C552D1F2F70BB009BEA03 /* SubscribeTo.swift in Sources */,
+				26E2CC3C1F1FCCDD000C56F4 /* Panel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268B5E371F0FD55E0084A0B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268B5E411F0FD55E0084A0B7 /* NF3500_SDKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		268B5E3E1F0FD55E0084A0B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 268B5E311F0FD55E0084A0B7 /* NF3500_SDK */;
+			targetProxy = 268B5E3D1F0FD55E0084A0B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		268B5E441F0FD55E0084A0B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		268B5E451F0FD55E0084A0B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		268B5E471F0FD55E0084A0B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A933C207EDE9266C26B9F506 /* Pods-NF3500_SDK.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PY9CB789VR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NF3500_SDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dorak.NF3500-SDK";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		268B5E481F0FD55E0084A0B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 669F9E151F348A145177E952 /* Pods-NF3500_SDK.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PY9CB789VR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NF3500_SDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dorak.NF3500-SDK";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		268B5E4A1F0FD55E0084A0B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FE950ADC8B05745ED745FE5 /* Pods-NF3500_SDKTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PY9CB789VR;
+				INFOPLIST_FILE = NF3500_SDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dorak.NF3500-SDKTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		268B5E4B1F0FD55E0084A0B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1867F80D573C440E59C3CCF /* Pods-NF3500_SDKTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PY9CB789VR;
+				INFOPLIST_FILE = NF3500_SDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dorak.NF3500-SDKTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		268B5E2C1F0FD55E0084A0B7 /* Build configuration list for PBXProject "NF3500_SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268B5E441F0FD55E0084A0B7 /* Debug */,
+				268B5E451F0FD55E0084A0B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		268B5E461F0FD55E0084A0B7 /* Build configuration list for PBXNativeTarget "NF3500_SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268B5E471F0FD55E0084A0B7 /* Debug */,
+				268B5E481F0FD55E0084A0B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		268B5E491F0FD55E0084A0B7 /* Build configuration list for PBXNativeTarget "NF3500_SDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268B5E4A1F0FD55E0084A0B7 /* Debug */,
+				268B5E4B1F0FD55E0084A0B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 268B5E291F0FD55E0084A0B7 /* Project object */;
+}

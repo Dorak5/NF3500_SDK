@@ -1,0 +1,6 @@
+framework module Pods_NF3500_SDK {
+  umbrella header "Pods-NF3500_SDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
