@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name          = "NF3500_SDK"
 
-  s.version       = "1.0.0"
+  s.version       = "1.0.1"
 
   s.summary       = "NF3500 SDK for iOS"
 
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.author        = { "Michael Dorak" => "mjdorak5@gmail.com" }
 
-  s.platform      = :ios, "10.3"
+  s.platform      = :ios, "11.0"
 
   s.source       = { :git => 'https://github.com/Dorak5/NF3500_SDK.git', :tag => s.version }
 
