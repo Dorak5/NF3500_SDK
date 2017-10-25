@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name          = "NF3500_SDK"
 
-  s.version       = "1.0.1"
+  s.version       = "1.0.3"
 
   s.summary       = "NF3500 SDK for iOS"
 
